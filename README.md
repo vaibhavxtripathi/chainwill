@@ -6,8 +6,7 @@ On-chain dead man's switch inheritance on Stellar. Lock XLM for a beneficiary. C
 | | |
 |---|---|
 | **Frontend** | `https://chainwill.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CC577DOIUL3RP5MW3QJRTGIXLBE5S2XCIM4OWGVY7IFENZCV4E63BBTZ` |
 
 ## How It Works
 
