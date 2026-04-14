@@ -6,7 +6,7 @@ On-chain dead man's switch inheritance on Stellar. Lock XLM for a beneficiary. C
 | | |
 |---|---|
 | **Frontend** | `https://chainwill.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CC577DOIUL3RP5MW3QJRTGIXLBE5S2XCIM4OWGVY7IFENZCV4E63BBTZ` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CCSHBQ2I5R2RW5SX5DJE5VSII23R3SKTQ3V7HYO4JQFBHAYV7OSYML3A` |
 
 ## How It Works
 
@@ -16,6 +16,16 @@ On-chain dead man's switch inheritance on Stellar. Lock XLM for a beneficiary. C
 4. **Owner can always revoke** while active — funds returned
 5. Each ping resets `deadline = current_ledger + check_interval`
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -49,4 +59,7 @@ cd frontend && npm install && npm run dev
 ```
 
 ---
-*Project #30 of 30 — Stellar Soroban Hackathon MOU*
+
+
+
+
